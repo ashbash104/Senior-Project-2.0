@@ -1,0 +1,203 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "john.doe@example.com",
+      "password": "hashed_password_1",
+      "role": "admin",
+      "firstName": "John",
+      "lastName": "Doe",
+      "phone": "555-123-4567",
+      "createdAt": "2023-05-15T10:30:00Z",
+      "updatedAt": "2023-05-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "email": "jane.smith@example.com",
+      "password": "hashed_password_2",
+      "role": "user",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "phone": "555-987-6543",
+      "createdAt": "2023-05-14T09:15:00Z",
+      "updatedAt": "2023-05-14T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "email": "mike.johnson@example.com",
+      "password": "hashed_password_3",
+      "role": "user",
+      "firstName": "Mike",
+      "lastName": "Johnson",
+      "phone": "555-456-7890",
+      "createdAt": "2023-05-13T14:45:00Z",
+      "updatedAt": "2023-05-13T14:45:00Z"
+    },
+    {
+      "id": 4,
+      "email": "sarah.williams@example.com",
+      "password": "hashed_password_4",
+      "role": "admin",
+      "firstName": "Sarah",
+      "lastName": "Williams",
+      "phone": "555-234-5678",
+      "createdAt": "2023-05-12T11:20:00Z",
+      "updatedAt": "2023-05-12T11:20:00Z"
+    },
+    {
+      "id": 5,
+      "email": "robert.brown@example.com",
+      "password": "hashed_password_5",
+      "role": "user",
+      "firstName": "Robert",
+      "lastName": "Brown",
+      "phone": "555-345-6789",
+      "createdAt": "2023-05-11T16:55:00Z",
+      "updatedAt": "2023-05-11T16:55:00Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "email": "emily.davis@example.com",
+      "phone": "555-111-2222",
+      "address": "123 Maple Street, Anytown, USA",
+      "status": "NEEDS_EMPTY_TOTES_DROPOFF",
+      "paymentStatus": "CURRENT",
+      "storageStatus": "ACTIVE",
+      "toteStatus": "NO_TOTES",
+      "dueDate": "2023-06-15",
+      "createdAt": "2023-05-15T10:30:00Z",
+      "updatedAt": "2023-05-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "firstName": "Michael",
+      "lastName": "Wilson",
+      "email": "michael.wilson@example.com",
+      "phone": "555-333-4444",
+      "address": "456 Oak Avenue, Somewhere, USA",
+      "status": "IN_STORAGE",
+      "paymentStatus": "PAID",
+      "storageStatus": "ACTIVE",
+      "toteStatus": "HAS_EMPTY_TOTES",
+      "dueDate": "2023-06-20",
+      "createdAt": "2023-05-14T09:15:00Z",
+      "updatedAt": "2023-05-14T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "firstName": "Lisa",
+      "lastName": "Martinez",
+      "email": "lisa.martinez@example.com",
+      "phone": "555-555-6666",
+      "address": "789 Pine Road, Elsewhere, USA",
+      "status": "NEEDS_FULL_TOTES_PICKUP",
+      "paymentStatus": "PAST_DUE",
+      "storageStatus": "INACTIVE",
+      "toteStatus": "HAS_FULL_TOTES",
+      "dueDate": "2023-05-25",
+      "createdAt": "2023-05-13T14:45:00Z",
+      "updatedAt": "2023-05-13T14:45:00Z"
+    },
+    {
+      "id": 4,
+      "firstName": "David",
+      "lastName": "Thompson",
+      "email": "david.thompson@example.com",
+      "phone": "555-777-8888",
+      "address": "321 Cedar Lane, Nowhere, USA",
+      "status": "NEEDS_FILLED_TOTES_DROPOFF",
+      "paymentStatus": "CURRENT",
+      "storageStatus": "PENDING",
+      "toteStatus": "HAS_FULL_TOTES",
+      "dueDate": "2023-06-10",
+      "createdAt": "2023-05-12T11:20:00Z",
+      "updatedAt": "2023-05-12T11:20:00Z"
+    },
+    {
+      "id": 5,
+      "firstName": "Jessica",
+      "lastName": "Rodriguez",
+      "email": "jessica.rodriguez@example.com",
+      "phone": "555-999-0000",
+      "address": "654 Birch Street, Anywhere, USA",
+      "status": "PAST_DUE",
+      "paymentStatus": "PAST_DUE",
+      "storageStatus": "INACTIVE",
+      "toteStatus": "NO_TOTES",
+      "dueDate": "2023-05-30",
+      "createdAt": "2023-05-11T16:55:00Z",
+      "updatedAt": "2023-05-11T16:55:00Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Empty Totes Pickup for Emily Davis",
+      "status": "TODO",
+      "assignedToId": 2,
+      "customerId": 1,
+      "dueDate": "2023-05-20",
+      "type": "PICKUP",
+      "description": "Pickup empty totes from customer Emily Davis at 123 Maple Street",
+      "priority": "MEDIUM",
+      "createdAt": "2023-05-15T10:30:00Z",
+      "updatedAt": "2023-05-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Full Totes Dropoff for Michael Wilson",
+      "status": "IN_PROGRESS",
+      "assignedToId": 3,
+      "customerId": 2,
+      "dueDate": "2023-05-25",
+      "type": "DROPOFF",
+      "description": "Deliver full totes to customer Michael Wilson at 456 Oak Avenue",
+      "priority": "HIGH",
+      "createdAt": "2023-05-14T09:15:00Z",
+      "updatedAt": "2023-05-14T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Maintenance Check",
+      "status": "TODO",
+      "assignedToId": 1,
+      "customerId": 4,
+      "dueDate": "2023-06-05",
+      "type": "MAINTENANCE",
+      "description": "Perform routine maintenance check on storage equipment",
+      "priority": "LOW",
+      "createdAt": "2023-05-13T14:45:00Z",
+      "updatedAt": "2023-05-13T14:45:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Urgent Totes Pickup for Lisa Martinez",
+      "status": "COMPLETED",
+      "assignedToId": 4,
+      "customerId": 3,
+      "dueDate": "2023-05-18",
+      "type": "PICKUP",
+      "description": "Urgent pickup of full totes from customer Lisa Martinez at 789 Pine Road",
+      "priority": "HIGH",
+      "createdAt": "2023-05-12T11:20:00Z",
+      "updatedAt": "2023-05-12T11:20:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Follow-up with Jessica Rodriguez",
+      "status": "TODO",
+      "assignedToId": 5,
+      "customerId": 5,
+      "dueDate": "2023-05-22",
+      "type": "OTHER",
+      "description": "Contact customer about past due status and resolve outstanding issues",
+      "priority": "MEDIUM",
+      "createdAt": "2023-05-11T16:55:00Z",
+      "updatedAt": "2023-05-11T16:55:00Z"
+    }
+  ]
+}
