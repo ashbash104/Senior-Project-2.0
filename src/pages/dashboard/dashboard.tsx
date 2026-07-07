@@ -24,6 +24,7 @@ import {
   EnvironmentOutlined,
 } from "@ant-design/icons";
 import { useList } from "@refinedev/core";
+import { CustomAvatar } from "components/custom-avatar";
 
 const { Title, Text } = Typography;
 const { Header, Content } = Layout;
@@ -132,18 +133,12 @@ export const Dashboard: FC = () => {
 
         {/* User Button */}
         <Button
-          type="text"
-          onClick={openDrawer}
-          style={{ color: "white", fontWeight: 600 }}
-          icon={
-            user.avatarUrl ? (
-              <Avatar src={user.avatarUrl} style={{ marginRight: 8 }} />
-            ) : (
-              <UserOutlined style={{ marginRight: 8 }} />
-            )
-          }
+        type="text"
+        onClick={openDrawer}
+        style={{ color: "white", fontWeight: 600, display: "flex", alignItems: "center", gap: 8 }}
         >
-          {user.name}
+        <CustomAvatar name={user.name} src={user.avatarUrl} />
+        {user.name}
         </Button>
       </Header>
 
